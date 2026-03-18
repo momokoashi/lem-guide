@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 700" width="520" height="700">
+  <defs>
+    <linearGradient id="bgE" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5EDE0"/>
+      <stop offset="100%" stop-color="#EDE3D4"/>
+    </linearGradient>
+    <linearGradient id="skinE" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5C8A0"/>
+      <stop offset="100%" stop-color="#E8B088"/>
+    </linearGradient>
+    <linearGradient id="lemE" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#E8DD5A"/>
+      <stop offset="40%" stop-color="#E2D84E"/>
+      <stop offset="100%" stop-color="#D4CA3C"/>
+    </linearGradient>
+    <radialGradient id="zoneGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF30CC" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FF30CC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="520" height="700" rx="24" fill="url(#bgE)"/>
+
+  <!-- Female body outline (front view, stylized) -->
+  <g transform="translate(260, 350)" stroke="#D4A080" stroke-width="2" fill="none" opacity="0.5">
+    <!-- Head -->
+    <ellipse cx="0" cy="-260" rx="28" ry="34"/>
+    <!-- Neck -->
+    <line x1="-10" y1="-226" x2="-12" y2="-210"/>
+    <line x1="10" y1="-226" x2="12" y2="-210"/>
+    <!-- Shoulders -->
+    <path d="M-12 -210 Q-50 -205 -80 -190"/>
+    <path d="M12 -210 Q50 -205 80 -190"/>
+    <!-- Arms -->
+    <path d="M-80 -190 Q-95 -150 -100 -100 Q-105 -50 -98 0"/>
+    <path d="M80 -190 Q95 -150 100 -100 Q105 -50 98 0"/>
+    <!-- Torso -->
+    <path d="M-55 -200 Q-60 -150 -55 -100 Q-50 -50 -48 0 Q-46 30 -50 60"/>
+    <path d="M55 -200 Q60 -150 55 -100 Q50 -50 48 0 Q46 30 50 60"/>
+    <!-- Chest contour -->
+    <path d="M-40 -175 Q-50 -160 -45 -145 Q-38 -135 -30 -140"/>
+    <path d="M40 -175 Q50 -160 45 -145 Q38 -135 30 -140"/>
+    <!-- Waist to hips -->
+    <path d="M-50 60 Q-55 80 -65 100 Q-75 130 -70 160"/>
+    <path d="M50 60 Q55 80 65 100 Q75 130 70 160"/>
+    <!-- Legs -->
+    <path d="M-70 160 Q-68 200 -65 250 Q-62 290 -60 320"/>
+    <path d="M70 160 Q68 200 65 250 Q62 290 60 320"/>
+    <!-- Inner legs -->
+    <path d="M-20 100 Q-22 150 -25 200 Q-28 250 -30 320"/>
+    <path d="M20 100 Q22 150 25 200 Q28 250 30 320"/>
+  </g>
+
+  <!-- ZONE 1: Nipples - glowing hotspot -->
+  <circle cx="220" cy="185" r="28" fill="url(#zoneGlow)"/>
+  <circle cx="220" cy="185" r="8" fill="#FF30CC" opacity="0.35"/>
+  <circle cx="300" cy="185" r="28" fill="url(#zoneGlow)"/>
+  <circle cx="300" cy="185" r="8" fill="#FF30CC" opacity="0.35"/>
+
+  <!-- Small Lem near nipple -->
+  <g transform="translate(220, 185) scale(0.18) rotate(-30)">
+    <path d="M0 -60 C-38 -55 -48 -20 -48 12 C-48 42 -34 60 -14 68 C-5 71 5 71 14 68 C34 60 48 42 48 12 C48 -20 38 -55 0 -60 Z" fill="url(#lemE)" stroke="#C9BF30" stroke-width="2"/>
+    <path d="M-10 -60 C-10 -60 -8 -76 0 -82 C8 -76 10 -60 10 -60" fill="#D9CF42" stroke="#C9BF30" stroke-width="2"/>
+  </g>
+
+  <!-- Label: Nipples -->
+  <rect x="115" y="135" width="70" height="22" rx="11" fill="#FF30CC" opacity="0.15"/>
+  <text x="150" y="151" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FF30CC" font-weight="bold">Nipples</text>
+
+  <!-- ZONE 2: Lower belly -->
+  <circle cx="260" cy="370" r="32" fill="url(#zoneGlow)"/>
+  <circle cx="260" cy="370" r="9" fill="#FF30CC" opacity="0.3"/>
+
+  <!-- Label: Lower belly -->
+  <rect x="320" y="355" width="95" height="22" rx="11" fill="#FF30CC" opacity="0.15"/>
+  <text x="367" y="371" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FF30CC" font-weight="bold">Lower belly</text>
+  <!-- Arrow -->
+  <line x1="320" y1="366" x2="292" y2="370" stroke="#FF30CC" stroke-width="1" opacity="0.5"/>
+
+  <!-- ZONE 3: Inner thighs -->
+  <circle cx="210" cy="520" r="28" fill="url(#zoneGlow)"/>
+  <circle cx="210" cy="520" r="7" fill="#FF30CC" opacity="0.3"/>
+  <circle cx="310" cy="520" r="28" fill="url(#zoneGlow)"/>
+  <circle cx="310" cy="520" r="7" fill="#FF30CC" opacity="0.3"/>
+
+  <!-- Label: Inner thighs -->
+  <rect x="100" y="550" width="95" height="22" rx="11" fill="#FF30CC" opacity="0.15"/>
+  <text x="147" y="566" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FF30CC" font-weight="bold">Inner thighs</text>
+
+  <!-- Dashed path connecting zones -->
+  <path d="M220 200 Q240 280 260 360" fill="none" stroke="#FF30CC" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.35"/>
+  <path d="M260 390 Q240 450 215 510" fill="none" stroke="#FF30CC" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.35"/>
+  <path d="M260 390 Q280 450 305 510" fill="none" stroke="#FF30CC" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.35"/>
+  <path d="M300 200 Q280 280 260 360" fill="none" stroke="#FF30CC" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.3"/>
+
+  <!-- Lime sparkles -->
+  <path d="M335 185 L338 179 L341 185 L338 191 Z" fill="#CCFD28" opacity="0.5"/>
+  <path d="M180 370 L183 364 L186 370 L183 376 Z" fill="#CCFD28" opacity="0.4"/>
+  <path d="M340 520 L343 514 L346 520 L343 526 Z" fill="#CCFD28" opacity="0.4"/>
+  <path d="M155 185 L158 180 L161 185 L158 190 Z" fill="#CCFD28" opacity="0.4"/>
+</svg>

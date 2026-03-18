@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 700" width="520" height="700">
+  <defs>
+    <linearGradient id="bgP" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5EDE0"/>
+      <stop offset="100%" stop-color="#EDE3D4"/>
+    </linearGradient>
+    <linearGradient id="skinTone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5C8A0"/>
+      <stop offset="100%" stop-color="#E8B088"/>
+    </linearGradient>
+    <linearGradient id="lemP" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#E8DD5A"/>
+      <stop offset="40%" stop-color="#E2D84E"/>
+      <stop offset="100%" stop-color="#D4CA3C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="520" height="700" rx="24" fill="url(#bgP)"/>
+
+  <!-- Divider line -->
+  <line x1="260" y1="40" x2="260" y2="660" stroke="#D4C4B0" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <!-- LEFT PANEL label -->
+  <text x="130" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333" font-style="italic">LEFT PANEL</text>
+  <text x="130" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">More pressure = tighter</text>
+  <text x="130" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">seal = more intense</text>
+
+  <!-- RIGHT PANEL label -->
+  <text x="390" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="bold" fill="#333" font-style="italic">RIGHT PANEL</text>
+  <text x="390" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">Less pressure = looser</text>
+  <text x="390" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">seal = gentler</text>
+
+  <!-- LEFT SIDE: Hand pressing down firmly -->
+  <!-- Skin-tone surface -->
+  <ellipse cx="130" cy="520" rx="100" ry="30" fill="#F5C8A0" opacity="0.5"/>
+
+  <!-- Hand shape (pressing down) -->
+  <path d="M80 250 Q75 280 78 310 Q80 340 90 360 Q95 375 100 385 L100 400 Q105 410 115 415 Q130 420 145 415 Q155 410 160 400 L162 385 Q170 370 175 355 Q182 330 183 300 Q184 270 180 250 Q175 230 160 220 Q145 215 130 218 Q110 220 95 235 Q82 245 80 250 Z" fill="url(#skinTone)" stroke="#D4A080" stroke-width="1"/>
+  <!-- Fingers -->
+  <path d="M90 360 Q88 375 92 390 Q95 400 100 400" fill="url(#skinTone)" stroke="#D4A080" stroke-width="0.8"/>
+  <path d="M170 350 Q175 370 172 388 Q168 400 162 400" fill="url(#skinTone)" stroke="#D4A080" stroke-width="0.8"/>
+  <!-- Thumb -->
+  <path d="M78 310 Q65 320 60 340 Q58 355 65 365 Q72 372 80 370" fill="url(#skinTone)" stroke="#D4A080" stroke-width="0.8"/>
+
+  <!-- Lem device under hand (left - pressed down) -->
+  <g transform="translate(130, 440)">
+    <path d="M0 -60 C-38 -55 -48 -20 -48 12 C-48 42 -34 60 -14 68 C-5 71 5 71 14 68 C34 60 48 42 48 12 C48 -20 38 -55 0 -60 Z" fill="url(#lemP)" stroke="#C9BF30" stroke-width="0.8"/>
+    <path d="M-10 -60 C-10 -60 -8 -76 0 -82 C8 -76 10 -60 10 -60" fill="#D9CF42" stroke="#C9BF30" stroke-width="0.8"/>
+    <ellipse cx="0" cy="-82" rx="5" ry="3" fill="#CFC536"/>
+    <text x="0" y="20" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#C0B630" opacity="0.5">N</text>
+  </g>
+
+  <!-- Pink arrow pointing DOWN (more pressure) -->
+  <path d="M130 140 L130 210" stroke="#FF30CC" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="118,200 130,225 142,200" fill="#FF30CC"/>
+
+  <!-- Pressure rings (pink, intense) -->
+  <ellipse cx="130" cy="510" rx="30" ry="8" fill="none" stroke="#FF30CC" stroke-width="2" opacity="0.6"/>
+  <ellipse cx="130" cy="525" rx="50" ry="12" fill="none" stroke="#FF30CC" stroke-width="1.8" opacity="0.45"/>
+  <ellipse cx="130" cy="540" rx="70" ry="16" fill="none" stroke="#FF30CC" stroke-width="1.5" opacity="0.3"/>
+  <ellipse cx="130" cy="555" rx="90" ry="20" fill="none" stroke="#FF30CC" stroke-width="1" opacity="0.15"/>
+
+  <!-- RIGHT SIDE: Hand lightly holding -->
+  <!-- Skin-tone surface -->
+  <ellipse cx="390" cy="520" rx="100" ry="30" fill="#F5C8A0" opacity="0.4"/>
+
+  <!-- Hand shape (lighter hold, slightly lifted) -->
+  <path d="M340 240 Q335 270 338 295 Q340 320 348 340 Q352 355 357 365 L358 378 Q363 388 372 392 Q387 397 402 392 Q412 388 416 378 L418 365 Q425 350 430 338 Q436 315 437 290 Q438 265 435 245 Q430 228 418 218 Q405 212 392 215 Q375 218 362 230 Q345 242 340 240 Z" fill="url(#skinTone)" stroke="#D4A080" stroke-width="1"/>
+  <path d="M348 340 Q346 358 350 372 Q353 380 358 378" fill="url(#skinTone)" stroke="#D4A080" stroke-width="0.8"/>
+  <path d="M428 335 Q432 355 430 370 Q426 380 418 378" fill="url(#skinTone)" stroke="#D4A080" stroke-width="0.8"/>
+  <path d="M338 295 Q325 308 320 325 Q318 340 324 348 Q330 354 338 352" fill="url(#skinTone)" stroke="#D4A080" stroke-width="0.8"/>
+
+  <!-- Lem device (right - lighter, slightly lifted) -->
+  <g transform="translate(390, 425)">
+    <path d="M0 -60 C-38 -55 -48 -20 -48 12 C-48 42 -34 60 -14 68 C-5 71 5 71 14 68 C34 60 48 42 48 12 C48 -20 38 -55 0 -60 Z" fill="url(#lemP)" stroke="#C9BF30" stroke-width="0.8"/>
+    <path d="M-10 -60 C-10 -60 -8 -76 0 -82 C8 -76 10 -60 10 -60" fill="#D9CF42" stroke="#C9BF30" stroke-width="0.8"/>
+    <ellipse cx="0" cy="-82" rx="5" ry="3" fill="#CFC536"/>
+    <text x="0" y="20" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-style="italic" fill="#C0B630" opacity="0.5">N</text>
+  </g>
+
+  <!-- Lime arrow pointing UP (less pressure) -->
+  <path d="M390 210 L390 140" stroke="#CCFD28" stroke-width="4" stroke-linecap="round"/>
+  <polygon points="378,150 390,125 402,150" fill="#CCFD28"/>
+
+  <!-- Pressure rings (lime, gentler) -->
+  <ellipse cx="390" cy="505" rx="25" ry="7" fill="none" stroke="#CCFD28" stroke-width="1.8" opacity="0.5"/>
+  <ellipse cx="390" cy="518" rx="42" ry="11" fill="none" stroke="#CCFD28" stroke-width="1.4" opacity="0.35"/>
+  <ellipse cx="390" cy="532" rx="60" ry="15" fill="none" stroke="#CCFD28" stroke-width="1" opacity="0.2"/>
+</svg>

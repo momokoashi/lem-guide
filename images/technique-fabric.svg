@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 700" width="520" height="700">
+  <defs>
+    <linearGradient id="bgF" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5EDE0"/>
+      <stop offset="100%" stop-color="#EDE3D4"/>
+    </linearGradient>
+    <linearGradient id="skinF" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F0C090"/>
+      <stop offset="50%" stop-color="#E8B080"/>
+      <stop offset="100%" stop-color="#DCA070"/>
+    </linearGradient>
+    <linearGradient id="skinF2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDAB72"/>
+      <stop offset="100%" stop-color="#D89860"/>
+    </linearGradient>
+    <linearGradient id="lemF" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#EDE46A"/>
+      <stop offset="40%" stop-color="#E5DC55"/>
+      <stop offset="100%" stop-color="#D8D045"/>
+    </linearGradient>
+    <pattern id="dotPat" patternUnits="userSpaceOnUse" width="12" height="12">
+      <circle cx="6" cy="6" r="1.8" fill="#CC4466" opacity="0.4"/>
+    </pattern>
+    <linearGradient id="underwearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0A0B0"/>
+      <stop offset="50%" stop-color="#E89098"/>
+      <stop offset="100%" stop-color="#E08890"/>
+    </linearGradient>
+    <clipPath id="cardClip">
+      <rect width="520" height="700" rx="24"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip)">
+    <!-- Background -->
+    <rect width="520" height="700" rx="24" fill="url(#bgF)"/>
+
+    <!-- Body - side/hip view, person reclined -->
+    <!-- Upper body / torso going off to the right -->
+    <path d="M520 120 Q480 100 420 110 Q360 125 320 160 Q290 185 275 220 Q260 260 260 300 Q262 340 270 370 Q280 400 290 420 Q300 440 310 460 Q320 480 340 500 Q370 530 420 550 Q470 565 520 570 Z" fill="url(#skinF)"/>
+
+    <!-- Left thigh / leg area going off bottom-left -->
+    <path d="M0 400 Q40 380 80 370 Q130 360 180 370 Q230 385 265 410 Q285 425 295 445 Q305 470 310 500 Q315 540 310 580 Q305 620 290 660 Q275 700 260 740 L0 740 Z" fill="url(#skinF2)"/>
+
+    <!-- Hip/belly area connecting torso and thigh -->
+    <path d="M260 300 Q255 330 258 360 Q262 385 270 405 Q275 415 285 425 Q295 435 295 445" fill="none" stroke="#D49565" stroke-width="1.5" opacity="0.3"/>
+
+    <!-- Belly button hint -->
+    <circle cx="350" cy="230" r="4" fill="#D09060" opacity="0.3"/>
+    <path d="M350 226 Q348 230 350 234" fill="none" stroke="#C08050" stroke-width="1" opacity="0.3"/>
+
+    <!-- Underwear / panties - pink with dot pattern -->
+    <path d="M140 390 Q180 365 230 360 Q270 358 300 370 Q330 385 350 410 Q365 435 370 465 Q372 490 365 520 Q350 540 320 550 Q280 558 240 555 Q200 550 170 535 Q145 518 130 495 Q120 470 118 445 Q118 420 125 400 Z" fill="url(#underwearGrad)"/>
+    <path d="M140 390 Q180 365 230 360 Q270 358 300 370 Q330 385 350 410 Q365 435 370 465 Q372 490 365 520 Q350 540 320 550 Q280 558 240 555 Q200 550 170 535 Q145 518 130 495 Q120 470 118 445 Q118 420 125 400 Z" fill="url(#dotPat)"/>
+
+    <!-- Underwear waistband -->
+    <path d="M140 390 Q180 365 230 360 Q270 358 300 370 Q330 385 350 410" fill="none" stroke="#D07080" stroke-width="2.5" opacity="0.5"/>
+
+    <!-- Lace trim at waistband -->
+    <path d="M138 393 Q150 387 162 393 Q174 399 186 393 Q198 387 210 393 Q222 399 234 393 Q246 387 258 393 Q270 399 282 393 Q294 387 306 393 Q318 399 330 393 Q342 387 352 395" fill="none" stroke="#E0A0B0" stroke-width="1.5" opacity="0.5"/>
+
+    <!-- Leg crease / inner thigh shadow -->
+    <path d="M150 400 Q170 420 185 450 Q195 475 198 500" fill="none" stroke="#C88555" stroke-width="1.5" opacity="0.25"/>
+    <path d="M340 420 Q350 445 355 475 Q358 500 355 530" fill="none" stroke="#C88555" stroke-width="1.5" opacity="0.2"/>
+
+    <!-- Small Lem device resting on the underwear, nozzle down -->
+    <g transform="translate(262, 420) scale(0.48) rotate(15)">
+      <!-- Lem body -->
+      <path d="M0 -70 C-42 -62 -55 -22 -55 15 C-55 50 -40 72 -16 80 C-6 83 6 83 16 80 C40 72 55 50 55 15 C55 -22 42 -62 0 -70 Z" fill="url(#lemF)" stroke="#C9BF30" stroke-width="1"/>
+      <!-- Highlight -->
+      <ellipse cx="-14" cy="-25" rx="18" ry="32" fill="white" opacity="0.15" transform="rotate(-8)"/>
+      <!-- Nozzle tip (pointing down toward fabric) -->
+      <path d="M-12 72 C-12 72 -9 90 0 98 C9 90 12 72 12 72" fill="#D9CF42" stroke="#C9BF30" stroke-width="1"/>
+      <ellipse cx="0" cy="98" rx="6" ry="4" fill="#CFC536"/>
+      <!-- Seam lines -->
+      <path d="M-12 -70 Q-14 -55 -14 -40" fill="none" stroke="#C0B630" stroke-width="0.6" opacity="0.4"/>
+      <path d="M12 -70 Q14 -55 14 -40" fill="none" stroke="#C0B630" stroke-width="0.6" opacity="0.4"/>
+      <!-- N logo -->
+      <text x="0" y="10" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-style="italic" fill="#C0B630" opacity="0.5">N</text>
+    </g>
+
+    <!-- Subtle indent where nozzle meets fabric -->
+    <ellipse cx="272" cy="472" rx="8" ry="4" fill="#D07080" opacity="0.3"/>
+
+    <!-- Vibration waves through fabric (subtle) -->
+    <path d="M245 480 Q258 475 272 478 Q286 481 298 477" fill="none" stroke="#FF30CC" stroke-width="1.2" opacity="0.3" stroke-dasharray="3 2"/>
+    <path d="M235 492 Q255 486 272 489 Q290 493 310 488" fill="none" stroke="#FF30CC" stroke-width="1" opacity="0.2" stroke-dasharray="3 2"/>
+
+    <!-- Annotation label -->
+    <g transform="translate(380, 230)">
+      <rect x="-5" y="-15" width="110" height="48" rx="8" fill="white" opacity="0.7"/>
+      <text x="50" y="2" text-anchor="middle" font-family="Arial, sans-serif" font-size="10.5" fill="#666" font-style="italic">Through thin</text>
+      <text x="50" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-size="10.5" fill="#666" font-style="italic">cotton or soft lace</text>
+    </g>
+    <!-- Arrow from label to Lem -->
+    <path d="M400 280 Q360 340 285 400" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+    <circle cx="285" cy="400" r="2.5" fill="#999" opacity="0.5"/>
+  </g>
+</svg>

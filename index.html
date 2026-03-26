@@ -1279,16 +1279,25 @@
       .hero h1 { font-size: 36px; }
       .section-title { font-size: 32px; }
 
-      .sensation-grid { grid-template-columns: 1fr; gap: 20px; }
+      .sensation-grid { display: flex !important; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 16px; max-width: 100%; padding: 0 24px 16px; scrollbar-width: none; }
+      .sensation-grid::-webkit-scrollbar { display: none; }
+      .sensation-grid .sensation-card { flex: 0 0 280px; scroll-snap-align: start; }
 
       .step-row { margin-bottom: 48px; }
       .step-text h3 { font-size: 26px; }
 
       .technique-card { flex: 0 0 220px; }
 
-      .video-grid { grid-template-columns: 1fr; gap: 24px; max-width: 360px; }
+      .video-grid { display: flex !important; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; gap: 16px; max-width: 100% !important; padding: 0 24px 16px; scrollbar-width: none; }
+      .video-grid::-webkit-scrollbar { display: none; }
+      .video-grid .video-card { flex: 0 0 280px; scroll-snap-align: start; }
+
       .product-layout { grid-template-columns: 1fr; gap: 32px; }
       .product-details h2 { font-size: 28px; }
+
+      .howitworks-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+      .howitworks-image { order: -1; }
+      .howitworks-image .pulse-ring { display: none; }
 
       .hero-buttons { flex-direction: column; align-items: center; }
       .btn { width: 100%; max-width: 300px; }
@@ -1366,16 +1375,16 @@
 
   <!-- ===== MANUAL CARD ===== -->
   <section style="padding: 40px 24px; background: var(--color-cream);">
-    <div style="max-width: 320px; margin: 0 auto; background: var(--color-white); border-radius: 20px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center;">
-      <div style="background: #F5C623; padding: 24px;">
-        <img src="https://hellonancy.com/cdn/shop/files/lem.png" alt="Lem Clitoral Massager" style="width: 180px; height: auto;">
+    <div style="max-width: 420px; margin: 0 auto; background: var(--color-white); border-radius: 20px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center;">
+      <div style="background: #F5C623; overflow: hidden;">
+        <img src="https://hellonancy.com/cdn/shop/files/lem.png" alt="Lem Clitoral Massager" style="width: 100%; height: auto; display: block;">
       </div>
       <div style="padding: 24px 20px;">
         <h3 style="font-family: var(--font-heading); font-size: 20px; font-weight: 700; color: var(--color-dark); margin-bottom: 8px;">Lem Clitoral Massager</h3>
         <p style="font-family: var(--font-body); font-size: 14px; color: #666; margin-bottom: 20px; line-height: 1.5;">Your zesty new friend, perfect for your first time with air suction bliss.</p>
         <div style="display: flex; gap: 12px; justify-content: center;">
-          <a href="https://hellonancy.com/pages/lem-guides" class="btn btn-outline" target="_blank" style="font-size: 13px; padding: 10px 20px;">Open Manual</a>
-          <a href="https://hellonancy.com/pages/lem-guides" class="btn btn-primary" target="_blank" style="font-size: 13px; padding: 10px 20px;">Download &#x1F4C4;</a>
+          <a href="https://cdn.shopify.com/s/files/1/0726/3764/5121/files/Digital-Manual-Lem-03_1.pdf?v=1759423544" class="btn btn-outline" target="_blank" style="font-size: 14px; padding: 14px 28px;">Open Manual</a>
+          <a href="https://cdn.shopify.com/s/files/1/0726/3764/5121/files/Digital-Manual-Lem-03_1.pdf?v=1759423544" download class="btn btn-primary" style="font-size: 14px; padding: 14px 28px; display: inline-flex; align-items: center; gap: 8px;">Download <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><polyline points="9 15 12 18 15 15"></polyline></svg></a>
         </div>
       </div>
     </div>
@@ -1411,8 +1420,8 @@
 
   <!-- ===== HOW DOES IT ACTUALLY WORK ===== -->
   <section style="padding: 80px 24px; background: var(--color-cream);">
-    <div style="max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
-      <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+    <div class="howitworks-grid" style="max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+      <div class="howitworks-image" style="position: relative; display: flex; align-items: center; justify-content: center;">
         <div class="pulse-ring pulse-ring-1"></div>
         <div class="pulse-ring pulse-ring-2"></div>
         <div class="pulse-ring pulse-ring-3"></div>
